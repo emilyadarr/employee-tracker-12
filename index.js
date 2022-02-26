@@ -2,9 +2,7 @@ const { prompt } = require('inquirer');
 const db = require('./db');
 require('console.table');
 const logo = require('asciiart-logo');
-const inquirer = require('inquirer');
 const connection = require('./db/connection');
-const res = require('express/lib/response');
 
 init();
 

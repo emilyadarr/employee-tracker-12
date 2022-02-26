@@ -2,9 +2,6 @@ const res = require('express/lib/response');
 const db = require('./connection');
 
 class DB {
-  // constructor(connection) {
-  //   this.connection = connection;
-  // }
 
   // Find all departments (presented with a formatted table showing department names and department ids)
   findAllDepartments() {
@@ -56,27 +53,6 @@ class DB {
       );
     });
   }
-
-  // Add a department (prompted to enter the name of the department and that department is added to the database)
-// addNewDepartment() {
-//   return new Promise((resolve, reject) => {
-//     db.query(
-//       `INSERT INTO department (name)
-//       VALUES (?)`,
-//     (err, results) => {
-//       if (err) {
-//         reject(err);
-//       }
-//       resolve(results);
-//     }
-//     );
-//   });
-// }
-  // Add a role (prompted to enter the name, salary, and department for the role and that role is added to the database)
-
-  // Add an employee (prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database)
-
-  // Update an employee (prompted to select an employee to update and their new role and this information is updated in the database)
 }
 
 module.exports = new DB();
